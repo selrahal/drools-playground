@@ -1,0 +1,8 @@
+import com.rhc.drools.droolsplayground.model.Beer;
+
+rule "Hop Drop and Roll Alcohol Content"
+when
+	$beer : Beer(name == "Hop Drop and Roll")
+then
+	$beer.setAlcoholContent(5);
+end
